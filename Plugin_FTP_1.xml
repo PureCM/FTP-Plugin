@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--Plugin_FTP_Config.xml - rename to Plugin_FTP_1.xml (or _2, _3 for multiple etc.) and set Enabled to true-->
+<Config>
+  <!--Set Enabled to true to enable the plugin instance-->
+  <Enabled>false</Enabled>
+
+  <!--If this is enabled then logging information will be written to log.txt in the plugin directory-->
+  <EnableLog>false</EnableLog>
+
+  <!-- The PureCM repository name -->
+  <Repository>Example</Repository>
+
+  <!-- The PureCM stream name -->
+  <Stream>Project 1/Version 1/Version 1</Stream>
+
+  <!-- The local workspace path -->
+  <!-- The deployment server will download the files to this workspace before -->
+  <!-- uploading them to the deployment server -->
+  <!-- If this is empty then the workspace will be created in the plugin data directory -->
+  <WorkspacePath></WorkspacePath>
+
+  <!-- The ftp server hostname or IP address -->
+  <Server>localhost</Server>
+
+  <!-- The ftp type = 'ftp' or 'sftp' -->
+  <Type>ftp</Type>
+
+  <!-- The ftp path (leave blank for root)-->
+  <Path></Path>
+
+  <!-- The ftp port (typically 21)-->
+  <Port>21</Port>
+
+  <!-- The ftp user name -->
+  <Username></Username>
+
+  <!-- The ftp user password -->
+  <Password></Password>
+
+  <!-- Whether to use passive ftp or active ftp. -->
+  <!-- A good definition of these can be found at http://slacksite.com/other/ftp.html -->
+  <Passive>false</Passive>
+
+  <!-- Set this to 'true' if you want all the workspace files to be uploaded to the -->
+  <!-- ftp site on startup. This is typically done as a one off if the ftp files or -->
+  <!-- workspace files are changed outside of PureCM. -->
+  <ForceSync>false</ForceSync>
+
+</Config>
